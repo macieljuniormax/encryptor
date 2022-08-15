@@ -1,9 +1,21 @@
 /* =========================== Patern ========================== */
+*{
+  box-sizing: border-box;
+}
+
 .container{
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0rem 1.5rem;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #22d3fd, #d2a2f8, #7c21ea);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: black;
 }
 /* ============================================================= */
 /* =========================== Header ========================== */
@@ -29,3 +41,89 @@
   font-weight: bold;
 }
 /* ============================================================= */
+/* ============================ Main =========================== */
+.main{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#encrypt-text{
+  color: #000000;
+  border: none;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 500px;
+  outline: none;
+  resize: none;
+  padding: 1.5rem;
+  font-size: 32px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+#encrypt-text::placeholder{
+  color: #000000;
+}
+
+.encrypt{
+  background-color: #f7f7f7;
+  flex-grow: 2;
+  flex-basis: 65%;
+}
+
+.decrypt{
+  flex-grow: 1;
+  flex-basis: 35%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#22d3fd, #d2a2f8, #7c21ea);
+}
+
+.decrypt img{
+  width: 100%;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  
+}
+
+.button{
+  font-family: 'Chakra Petch', sans-serif;
+  padding: 10px 60px;
+  border: none;
+}
+
+.btn-encrypt{
+  background-color: #7c21ea;
+  color: #f7f7f7;
+}
+
+.btn-encrypt:hover{
+  color: #7c21ea;
+  border: solid 1px #7c21ea;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn-decrypt{
+  background-color: #22d3fd;
+  color: #000000;
+}
+
+.btn-decrypt:hover{
+  color: #22d3fd;
+  border: solid 1px #22d3fd;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+/* ============================================================= */
+
+

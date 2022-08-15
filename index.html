@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Encryptor</title>
-  </head>
-  <body>
-    <header class="header container">
-      <div class="header-logo">
-        <img src="assets/images/encryptor-logo.png" alt="Logo Encryptor">
-        <p>Encryptor</p>
-      </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Encryptor</title>
+    </head>
+    <body>
+        <header class="header container">
+            <div class="header-logo gradient">
+                <img src="assets/images/encryptor-logo.png" alt="Logo
+                    Encryptor">
+                <p class="gradient">Encryptor</p>
+            </div>
+        </header>
+        <main class="main container">
+            <div class="encrypt">
+                <div class="encrypt-text">
+                    <form>
+                        <textarea name="" id="encrypt-text" autofocus
+                            placeholder="Digite seu texto..."></textarea>
+                    </form>
+                </div>
+                <div class="buttons">
+                    <button class="button btn-encrypt">Criptografar</button>
+                    <button class="button btn-decrypt">Descriptografar</button>
+                </div>
+            </div>
 
-  </body>
+            <div class="decrypt">
+                <div class="not-find">
+                    <img src="assets/images/find-logo.svg" alt="">
+                </div>
+            </div>
+        </main>
+
+    </body>
 </html>
