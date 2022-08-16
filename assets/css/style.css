@@ -1,6 +1,7 @@
 /* =========================== Patern ========================== */
 *{
   box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 .container{
@@ -35,9 +36,8 @@
   width: 80px;
 }
 
-.header-logo p{
+.header-logo h1{
   font-size: 75px;
-  font-family: 'Chakra Petch', sans-serif;
   font-weight: bold;
 }
 /* ============================================================= */
@@ -58,7 +58,6 @@
   resize: none;
   padding: 1.5rem;
   font-size: 32px;
-  font-family: 'Chakra Petch', sans-serif;
 }
 
 #encrypt-text::placeholder{
@@ -79,10 +78,31 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(#22d3fd, #d2a2f8, #7c21ea);
+  padding: 0 20px;
 }
 
 .decrypt img{
   width: 100%;
+}
+
+.decrypt h3{
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.decrypt h3{
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+}
+
+.decrypt p{
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
 }
 
 .buttons{
@@ -91,14 +111,15 @@
   justify-content: center;
   gap: 20px;
   background-color: #f7f7f7;
-  padding: 100px 0;
-  
+  padding: 100px 30px;
+  flex-wrap: wrap;
 }
 
 .button{
-  font-family: 'Chakra Petch', sans-serif;
   padding: 10px 60px;
   border: none;
+  width: 100%;
+  max-width: 300px;
 }
 
 .btn-encrypt{
@@ -126,4 +147,20 @@
 }
 /* ============================================================= */
 
+@media (max-width: 510px) {
+  .header-logo h1{
+    font-size: 60px;
+    font-weight: bold;
+  }
+}
 
+@media (max-width: 440px) {
+  .header-logo h1{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #encrypt-text{
+    font-size: 28px;
+  }
+}
