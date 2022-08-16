@@ -21,29 +21,40 @@
                 <h1 class="gradient">Encryptor</h1>
             </div>
         </header>
-        <main class="main container">
-            <div class="encrypt">
-                <div class="encrypt-text">
-                    <form>
-                        <textarea name="" id="encrypt-text" autofocus
-                            placeholder="Digite seu texto..."></textarea>
-                    </form>
+        <main class="container">
+            <div class="main">
+                <div class="encrypt">
+                    <div class="encrypt-text">
+                        <form>
+                            <textarea name="" id="encrypt-text" autofocus
+                                placeholder="Digite seu texto..."></textarea>
+                        </form>
+                    </div>
+                    <div class="buttons">
+                        <button class="button btn-encrypt"
+                            onclick="encrypt(this)">Criptografar</button>
+                        <button class="button btn-decrypt">Descriptografar</button>
+                    </div>
                 </div>
-                <div class="buttons">
-                    <button class="button btn-encrypt">Criptografar</button>
-                    <button class="button btn-decrypt">Descriptografar</button>
-                </div>
-            </div>
 
-            <div class="decrypt">
-                <div class="not-find">
-                    <img src="assets/images/find-logo.svg" alt="">
-                    <h3>Nenhuma mensagem encontrada</h3>
-                    <p>Digite um texto que você deseja criptografar ou
-                        descriptografar.</p>
+                <div class="decrypt">
+                    <div class="not-find">
+                        <img src="assets/images/find-logo.svg" alt="">
+                        <h3>Nenhuma mensagem encontrada</h3>
+                        <p>Digite um texto que você deseja criptografar ou
+                            descriptografar.</p>
+                    </div>
+                    <div class="encrypted-box">
+                        <div class="encrypted-text"></div>
+                        <div>
+                            <button class="button btn-copy">Copiar</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </main>
-
+        <footer></footer>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

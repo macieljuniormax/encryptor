@@ -1,4 +1,11 @@
 /* =========================== Patern ========================== */
+:root{
+  --blue-light: #22d3fd;
+  --purple-dark: #7c21ea;
+  --pink-light: #d2a2f8;
+  --grey-light: #EFEFEF
+}
+
 *{
   box-sizing: border-box;
   font-family: 'Chakra Petch', sans-serif;
@@ -12,7 +19,7 @@
 }
 
 .gradient {
-  background: linear-gradient(90deg, #22d3fd, #d2a2f8, #7c21ea);
+  background: linear-gradient(90deg, var(--blue-light), var(--pink-light), var(--purple-dark));
   background-clip: text;
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
@@ -46,18 +53,21 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: var(--grey-light);
+  border-radius: 10px;
 }
 
 #encrypt-text{
   color: #000000;
   border: none;
-  background-color: #f7f7f7;
+  background-color: var(--grey-light);
   width: 100%;
-  height: 500px;
+  height: 450px;
   outline: none;
   resize: none;
   padding: 1.5rem;
   font-size: 32px;
+  border-radius: 10px 0px 0px 0px;
 }
 
 #encrypt-text::placeholder{
@@ -65,20 +75,78 @@
 }
 
 .encrypt{
-  background-color: #f7f7f7;
   flex-grow: 2;
   flex-basis: 65%;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--grey-light);
+  padding: 30px 30px;
+  flex-wrap: wrap;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.button{
+  padding: 10px 60px;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-encrypt{
+  background-color: var(--purple-dark);
+  color: var(--grey-light);
+  transition: 0.5s;
+}
+
+.btn-encrypt:hover{
+  color: var(--purple-dark);
+  border: solid 1px var(--purple-dark);
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn-decrypt{
+  background-color: var(--blue-light);
+  color: #000000;
+  transition: 0.5s;
+}
+
+.btn-decrypt:hover{
+  color: var(--blue-light);
+  border: solid 1px var(--blue-light);
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn-copy{
+  background-color: var(--pink-light);
+  color: #000000;
+  transition: 0.5s;
+}
+
+.btn-copy:hover{
+  color: var(--pink-light);
+  border: solid 1px var(--pink-light);
+  background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 .decrypt{
   flex-grow: 1;
   flex-basis: 35%;
   min-width: 300px;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#22d3fd, #d2a2f8, #7c21ea);
+  background: linear-gradient(var(--blue-light), var(--pink-light), var(--purple-dark));
   padding: 0 20px;
+  border-radius: 10px;
 }
 
 .decrypt img{
@@ -105,47 +173,33 @@
   font-size: 18px;
 }
 
-.buttons{
-  width: 100%;
+.encrypted-box{
   display: flex;
   justify-content: center;
-  gap: 20px;
-  background-color: #f7f7f7;
-  padding: 100px 30px;
-  flex-wrap: wrap;
-}
-
-.button{
-  padding: 10px 60px;
-  border: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  max-width: 300px;
+  height: 100%;
+  padding: 30px 10px;
+  gap: 20px;
+  display: none;
 }
 
-.btn-encrypt{
-  background-color: #7c21ea;
-  color: #f7f7f7;
+.encrypted-text{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 90%;
+  padding: 25px 25px;
 }
 
-.btn-encrypt:hover{
-  color: #7c21ea;
-  border: solid 1px #7c21ea;
-  background-color: #FFFFFF;
-  cursor: pointer;
-}
 
-.btn-decrypt{
-  background-color: #22d3fd;
-  color: #000000;
-}
-
-.btn-decrypt:hover{
-  color: #22d3fd;
-  border: solid 1px #22d3fd;
-  background-color: #FFFFFF;
-  cursor: pointer;
-}
 /* ============================================================= */
+@media (max-width: 905px) {
+  #encrypt-text{
+    height: 300px;
+  }
+}
 
 @media (max-width: 510px) {
   .header-logo h1{
