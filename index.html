@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Encryptor</title>
-    </head>
-    <body>
-        <header class="header container">
-            <div class="header-logo gradient">
-                <img src="assets/images/encryptor-logo.png" alt="Logo
-                    Encryptor">
-                <h1 class="gradient">Encryptor</h1>
-            </div>
-        </header>
-        <main class="container">
-            <div class="main">
-                <div class="encrypt">
-                    <div class="encrypt-text">
-                        <form>
-                            <textarea name="" id="encrypt-text" autofocus
-                                placeholder="Digite seu texto..."></textarea>
-                        </form>
-                    </div>
-                    <div class="buttons">
-                        <button class="button btn-encrypt"
-                            onclick="encrypt(this)">Criptografar</button>
-                        <button class="button btn-decrypt">Descriptografar</button>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Encryptor</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-logo gradient">
+        <img src="assets/images/encryptor-logo.png" alt="Logo
+          Encryptor">
+        <h1 class="gradient">Encryptor</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="main">
+        <div class="encrypt">
+          <div class="encrypt-text">
+            <form>
+              <textarea name="" id="encrypt-text" autofocus
+                placeholder="Digite seu texto..."></textarea>
+            </form>
+          </div>
+          <div class="buttons">
+            <button class="button btn-encrypt"
+              onclick="encrypt(this)">Criptografar</button>
+            <button class="button btn-decrypt"
+              onclick="decrypt(this)">Descriptografar</button>
+          </div>
+        </div>
 
-                <div class="decrypt">
-                    <div class="not-find">
-                        <img src="assets/images/find-logo.svg" alt="">
-                        <h3>Nenhuma mensagem encontrada</h3>
-                        <p>Digite um texto que você deseja criptografar ou
-                            descriptografar.</p>
-                    </div>
-                    <div class="encrypted-box">
-                        <div class="encrypted-text"></div>
-                        <div>
-                            <button class="button btn-copy">Copiar</button>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="decrypt">
+          <div class="not-find">
+            <img src="assets/images/find-logo.svg" alt="">
+            <h3>Nenhuma mensagem encontrada</h3>
+            <p>Digite um texto que você deseja criptografar ou
+              descriptografar.</p>
+          </div>
+          <div class="encrypted-box">
+            <textarea disabled class="encrypted-text"></textarea>
+            <div>
+              <button class="button btn-copy" onclick="copy()">Copiar</button>
             </div>
-        </main>
-        <footer></footer>
-        <script src="assets/js/script.js"></script>
-    </body>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

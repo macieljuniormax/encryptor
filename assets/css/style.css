@@ -9,6 +9,9 @@
 *{
   box-sizing: border-box;
   font-family: 'Chakra Petch', sans-serif;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .container{
@@ -91,10 +94,11 @@
 }
 
 .button{
-  padding: 10px 60px;
+  padding: 15px 60px;
   border: none;
   width: 100%;
   max-width: 300px;
+  border-radius: 10px;
 }
 
 .btn-encrypt{
@@ -174,7 +178,6 @@
 }
 
 .encrypted-box{
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -187,10 +190,16 @@
 }
 
 .encrypted-text{
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: inherit;
   height: 90%;
   padding: 25px 25px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  resize: none;
 }
 
 
