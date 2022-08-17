@@ -42,4 +42,4 @@ ___
 <img src="https://github.com/macieljuniormax/encryptor/blob/main/assets/images/desktop.png" width="100%">
 
 ## Celular | Tablet
-<img src="https://github.com/macieljuniormax/encryptor/blob/main/assets/images/mobile.png" height="1000px"> | <img src="https://github.com/macieljuniormax/encryptor/blob/main/assets/images/tablet.png" height="1000px">
+<img src="https://github.com/macieljuniormax/encryptor/blob/main/assets/images/mobile.png" width="28%"> | <img src="https://github.com/macieljuniormax/encryptor/blob/main/assets/images/tablet.png" width="68%">
