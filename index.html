@@ -29,12 +29,19 @@
               <textarea name="" id="encrypt-text" autofocus
                 placeholder="Digite seu texto..."></textarea>
             </form>
+
           </div>
-          <div class="buttons">
-            <button class="button btn-encrypt"
-              onclick="encrypt(this)">Criptografar</button>
-            <button class="button btn-decrypt"
-              onclick="decrypt(this)">Descriptografar</button>
+          <div class="click-area">
+            <div class="warning-area">
+              <img src="assets/images/exclamation-icon.png" alt="">
+              <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="buttons">
+              <button class="button btn-encrypt"
+                onclick="encrypt(this)">Criptografar</button>
+              <button class="button btn-decrypt"
+                onclick="decrypt(this)">Descriptografar</button>
+            </div>
           </div>
         </div>
 

@@ -70,7 +70,7 @@
   resize: none;
   padding: 1.5rem;
   font-size: 32px;
-  border-radius: 10px 0px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 #encrypt-text::placeholder{
@@ -82,23 +82,46 @@
   flex-basis: 65%;
 }
 
+.click-area{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  background-color: var(--grey-light);
+  border-radius: 0px 0px 0px 10px;
+}
+
+.warning-area{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 12px;
+}
+
+.warning-area img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-bottom: 4px;
+}
+
 .buttons{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
-  background-color: var(--grey-light);
-  padding: 30px 30px;
   flex-wrap: wrap;
-  border-radius: 0px 0px 0px 10px;
 }
 
 .button{
   padding: 15px 60px;
   border: none;
-  width: 100%;
-  max-width: 300px;
+  width: 47%;
   border-radius: 10px;
+  font-size: 15px;
+}
+
+.button.btn-copy{
+  width: 100%;
 }
 
 .btn-encrypt{
@@ -143,8 +166,8 @@
 .decrypt{
   flex-grow: 1;
   flex-basis: 35%;
-  min-width: 300px;
   min-height: 300px;
+  min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,12 +178,6 @@
 
 .decrypt img{
   width: 100%;
-}
-
-.decrypt h3{
-  width: 100%;
-  color: #FFFFFF;
-  text-align: center;
 }
 
 .decrypt h3{
@@ -210,6 +227,12 @@
   }
 }
 
+@media (max-width: 607px) {
+  .button{
+    width: 100%;
+  }
+}
+
 @media (max-width: 510px) {
   .header-logo h1{
     font-size: 60px;
@@ -220,10 +243,34 @@
 @media (max-width: 440px) {
   .header-logo h1{
     font-size: 40px;
-    font-weight: bold;
   }
 
   #encrypt-text{
     font-size: 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  .decrypt{
+    min-width: 270px;
+  }
+  .warning-area{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 344px) {
+  .header-logo h1{
+    font-size: 35px;
+  }
+  .button{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 330px) {
+  .button{
+    font-size: 12px;
   }
 }
